@@ -1,3 +1,13 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
   }
@@ -151,7 +161,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
+    padding: 0 24px;
 
 }
 
@@ -186,5 +196,79 @@ footer {
 .footer__link {
     padding: 0 16px;
 
+
+}
+
+
+
+@media (max-width: 780px) {
+.row {
+    flex-direction: column;
+}
+.home__disc {
+margin-bottom: 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.home__disc--button {
+    max-width: 240px;
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+    .subheader{
+        text-align: center;
+        font-size: 28px;
+    }
+    
+ul {
+    display: none;
+}    
+
+.section__disc {
+    flex-direction: column;
+}
+
+.section__disc--wrapper {
+    width: 100%;
+}
+
+.about__img--wrapper {
+    width: 100%;
+
+
+}
+
+#discord .section__disc {
+    flex-direction: column-reverse;
+
+
+}
+
+
+footer {
+    padding: 48px 24px;
+
+
+}
+
+
+
+.footer__logo {
+    max-width: 360px;
+
+}
+
+.footer__link {
+    padding: 0 4px;
+    font-size: 18px;
+}
+
+.footer__links {
+    margin-bottom: 24px;
+}
 
 }
